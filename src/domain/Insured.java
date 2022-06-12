@@ -7,8 +7,8 @@ public class Insured {
     //-------------------------------------------------------------------------------------------------------------------
     //Attributes
     //-------------------------------------------------------------------------------------------------------------------
-    private int afm;
-    private int amka;
+    private String afm;
+    private String amka;
     private String name;
     private String surname;
     private LocalDate birthdate;
@@ -17,7 +17,7 @@ public class Insured {
     //-------------------------------------------------------------------------------------------------------------------
     //Constructors
     //-------------------------------------------------------------------------------------------------------------------
-    public Insured(int afm, int amka, String name, String surname, LocalDate birthdate, String email, boolean isBooked) {
+    public Insured(String afm, String amka, String name, String surname, LocalDate birthdate, String email, boolean isBooked) {
         this.afm = afm;
         this.amka = amka;
         this.name = name;
@@ -29,7 +29,7 @@ public class Insured {
 
     public Insured() {
     }
-    public Insured(int afm, int amka, String name, String surname, LocalDate birthdate, String email) {
+    public Insured(String afm, String amka, String name, String surname, LocalDate birthdate, String email) {
         this.afm = afm;
         this.amka = amka;
         this.name = name;
@@ -41,19 +41,19 @@ public class Insured {
     //Getters and Setters
     //-------------------------------------------------------------------------------------------------------------------
 
-    public int getAfm() {
+    public String getAfm() {
         return afm;
     }
 
-    public void setAfm(int afm) {
+    public void setAfm(String afm) {
         this.afm = afm;
     }
 
-    public int getAmka() {
+    public String getAmka() {
         return amka;
     }
 
-    public void setAmka(int amka) {
+    public void setAmka(String amka) {
         this.amka = amka;
     }
 
