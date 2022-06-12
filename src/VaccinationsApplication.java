@@ -16,9 +16,6 @@ public class VaccinationsApplication {
 		//asList method returns a type of ArrayList that is different from java. util. ArrayList. The main difference is that the returned ArrayList only wraps an existing array — it doesn't implement the add and remove methods.
 		//asList gia tous insured opou dinw afm,amka,name,surname,birthdate,email
 
-		//Oi metavlites afm kai amka einai tupou int pou shmainei oti pairnoun mexri 10 psifia enw sti pragmatikotita
-		//to afm einai 9 psifia kai to amka 11, mporoume na ta kanoume long h apla sumfwnoume oti tha einai mexri 10 psifia gia eukolia
-
 		List<Insured> insuredCitizens = Arrays.asList(
 
 				//---------------------------------------------------------------------------------------------------------------------------------
@@ -34,21 +31,21 @@ public class VaccinationsApplication {
 //				Check if the date after subtracting months is valid or not.
 //				If date is invalid then method adjust the day-of-month to the last valid day.}
 				//---------------------------------------------------------------------------------------------------------------------------------
-				new Insured(1, 11, "George", "Georgiadis", LocalDate.now().minusYears(22L).minusMonths(10L).minusDays(11L), "georgegeorgiadis@gmail.com"),
-				new Insured(2, 21, "Maria", "Papadopoulou", LocalDate.now().minusYears(63L).minusMonths(4L).minusDays(1L), "mariapapadopoulou@gmail.com"),
-				new Insured(3, 31, "Ioanna", "Ioannidou", LocalDate.now().minusYears(72L).minusMonths(5L).minusDays(21L), "iioannaioannidou@gmail.com"),
-				new Insured(4, 41, "Basilis", "Argyropoulos", LocalDate.now().minusYears(82L).minusMonths(6L).minusDays(4L), "basilisargyropoulos@gmail.com"),
-				new Insured(5, 51, "Dimos", "Gabrtsis", LocalDate.now().minusYears(32L).minusMonths(2L).minusDays(11L), "dimosgabrtsis@gmail.com"),
-				new Insured(6, 61, "Faidon", "Barberlis", LocalDate.now().minusYears(12L).minusMonths(6L).minusDays(1L), "faidonbarberlis@gmail.com"),
-				new Insured(7, 71, "Alkiviadis", "Karakis", LocalDate.now().minusYears(25L).minusMonths(7L).minusDays(12L), "alkiviadiskarakis@gmail.com"),
-				new Insured(8, 81, "Panos", "Kalatzopoulos", LocalDate.now().minusYears(72L).minusMonths(8L).minusDays(2L), "panoskalatzopoulos@gmail.com"),
-				new Insured(9, 91, "Dimitris", "Tegos", LocalDate.now().minusYears(32L).minusMonths(4L).minusDays(4L), "dimitristegos@gmail.com"),
-				new Insured(10, 101, "Alexis", "Xenoglou", LocalDate.now().minusYears(52L).minusMonths(5L).minusDays(5L), "alexisxenoglou@gmail.com"),
-				new Insured(11, 111, "Dionisis", "Spereas", LocalDate.now().minusYears(62L).minusMonths(9L).minusDays(11L), "dionisisspereas@gmail.com"),
-				new Insured(12, 121, "Vrasidas", "Antonakos", LocalDate.now().minusYears(72L).minusMonths(4L).minusDays(1L), "vrasidasantonakos@gmail.com"),
-				new Insured(13, 131, "Athanasia", "Spinaki", LocalDate.now().minusYears(32L).minusMonths(6L).minusDays(11L), "athanasiaspinaki@gmail.com"),
-				new Insured(14, 141, "Valeria", "Galanopoulou", LocalDate.now().minusYears(42L).minusMonths(7L).minusDays(11L), "valeriagalanopoulou@gmail.com"),
-				new Insured(15, 151, "Athanasia", "Leventou", LocalDate.now().minusYears(52L).minusMonths(8L).minusDays(11L), "athanasialeventou@gmail.com"));
+				new Insured("1", "11", "George", "Georgiadis", LocalDate.now().minusYears(22L).minusMonths(10L).minusDays(11L), "georgegeorgiadis@gmail.com"),
+				new Insured("2", "21", "Maria", "Papadopoulou", LocalDate.now().minusYears(63L).minusMonths(4L).minusDays(1L), "mariapapadopoulou@gmail.com"),
+				new Insured("3", "31", "Ioanna", "Ioannidou", LocalDate.now().minusYears(72L).minusMonths(5L).minusDays(21L), "iioannaioannidou@gmail.com"),
+				new Insured("4", "41", "Basilis", "Argyropoulos", LocalDate.now().minusYears(82L).minusMonths(6L).minusDays(4L), "basilisargyropoulos@gmail.com"),
+				new Insured("5", "51", "Dimos", "Gabrtsis", LocalDate.now().minusYears(32L).minusMonths(2L).minusDays(11L), "dimosgabrtsis@gmail.com"),
+				new Insured("6", "61", "Faidon", "Barberlis", LocalDate.now().minusYears(12L).minusMonths(6L).minusDays(1L), "faidonbarberlis@gmail.com"),
+				new Insured("7", "71", "Alkiviadis", "Karakis", LocalDate.now().minusYears(25L).minusMonths(7L).minusDays(12L), "alkiviadiskarakis@gmail.com"),
+				new Insured("8", "81", "Panos", "Kalatzopoulos", LocalDate.now().minusYears(72L).minusMonths(8L).minusDays(2L), "panoskalatzopoulos@gmail.com"),
+				new Insured("9", "91", "Dimitris", "Tegos", LocalDate.now().minusYears(32L).minusMonths(4L).minusDays(4L), "dimitristegos@gmail.com"),
+				new Insured("10", "101", "Alexis", "Xenoglou", LocalDate.now().minusYears(52L).minusMonths(5L).minusDays(5L), "alexisxenoglou@gmail.com"),
+				new Insured("11", "111", "Dionisis", "Spereas", LocalDate.now().minusYears(62L).minusMonths(9L).minusDays(11L), "dionisisspereas@gmail.com"),
+				new Insured("12", "121", "Vrasidas", "Antonakos", LocalDate.now().minusYears(72L).minusMonths(4L).minusDays(1L), "vrasidasantonakos@gmail.com"),
+				new Insured("13", "131", "Athanasia", "Spinaki", LocalDate.now().minusYears(32L).minusMonths(6L).minusDays(11L), "athanasiaspinaki@gmail.com"),
+				new Insured("14", "141", "Valeria", "Galanopoulou", LocalDate.now().minusYears(42L).minusMonths(7L).minusDays(11L), "valeriagalanopoulou@gmail.com"),
+				new Insured("15", "151", "Athanasia", "Leventou", LocalDate.now().minusYears(52L).minusMonths(8L).minusDays(11L), "athanasialeventou@gmail.com"));
 
 
 		//Creation of 4 doctors
