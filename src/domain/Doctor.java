@@ -7,21 +7,21 @@ public class Doctor {
     //-------------------------------------------------------------------------------------------------------------------
     //Attributes
     //-------------------------------------------------------------------------------------------------------------------
-    private int amka;
+    private String amka;
     private String name;
     private String surname;
     private List<Timeslot> timeslots;
     //-------------------------------------------------------------------------------------------------------------------
     //Constructors
     //-------------------------------------------------------------------------------------------------------------------
-    public Doctor(int amka, String name, String surname, List<Timeslot> timeslots) {
+    public Doctor(String amka, String name, String surname, List<Timeslot> timeslots) {
         this.amka = amka;
         this.name = name;
         this.surname = surname;
         this.timeslots = timeslots;
     }
 
-    public Doctor(int amka, String name, String surname) {
+    public Doctor(String amka, String name, String surname) {
         this.amka = amka;
         this.name = name;
         this.surname = surname;
@@ -34,10 +34,10 @@ public class Doctor {
     //-------------------------------------------------------------------------------------------------------------------
     //Getters and Setters
     //-------------------------------------------------------------------------------------------------------------------
-    public int getAmka() {
+    public String getAmka() {
         return amka;
     }
-    public void setAmka(int amka) {
+    public void setAmka(String amka) {
         this.amka = amka;
     }
 
