@@ -49,10 +49,10 @@ public class VaccinationsApplication {
 
 
 		//Creation of 4 doctors
-		Doctor doctor1 = new Doctor(123, "Chris", "Georgiadis", new ArrayList<>());
-		Doctor doctor2 = new Doctor(234, "Nikos", "Vlassopoulos", new ArrayList<>());
-		Doctor doctor3 = new Doctor(345,"Giannis","Markoglou", new ArrayList<>());
-		Doctor doctor4 = new Doctor(456,"Kostas","Argiriadis", new ArrayList<>());
+		Doctor doctor1 = new Doctor("123", "Chris", "Georgiadis", new ArrayList<>());
+		Doctor doctor2 = new Doctor("234", "Nikos", "Vlassopoulos", new ArrayList<>());
+		Doctor doctor3 = new Doctor("345","Giannis","Markoglou", new ArrayList<>());
+		Doctor doctor4 = new Doctor("456","Kostas","Argiriadis", new ArrayList<>());
 
 		//Creation of Timeslots for doctor1
 		Timeslot timeslot = new Timeslot(0, 1, 1, 2022, 10, 0, 0, 0, doctor1, false);
